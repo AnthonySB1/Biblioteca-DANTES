@@ -1,0 +1,178 @@
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #172554;
+        }
+
+       
+        header {
+            background: #172554;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        
+        .inicio {
+            background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCd-He_nYpCK1YVcw0ukyxDuaSuHGP3R_0qxSRy_Kg4A&s=10");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+
+        }
+
+        .inicio h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .inicio p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+       
+        .seccion {
+            padding: 40px 8%;
+        }
+
+        .seccion h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .libros {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .libro {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #00000015;
+        }
+
+        .libro .portada {
+            font-size: 65px;
+            margin-bottom: 15px;
+        }
+
+        .libro h3 {
+            margin-bottom: 10px;
+        }
+
+        .libro p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+      
+        .nosotros {
+            background: #eaf2ff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .nosotros h2 {
+            margin-bottom: 15px;
+        }
+
+    
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            line-height: 1.8;
+        }
+
+     
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .libros {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .inicio h2 {
+                font-size: 27px;
+            }
+        }
+
+   
+        @media (max-width: 480px) {
+            .libros {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            header {
+                padding: 20px 10px;
+            }
+
+            .inicio {
+                padding: 40px 15px;
+            }
+
+            .inicio h2 {
+                font-size: 24px;
+            }
+
+            .inicio p {
+                font-size: 16px;
+            }
+
+            .seccion {
+                padding: 30px 15px;
+            }
+        }
+    </style>
